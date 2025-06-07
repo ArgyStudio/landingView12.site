@@ -209,7 +209,7 @@ window.addEventListener('load', async () => {
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subdomain: 'memewb', fbc, fbp })
+      body: JSON.stringify({ subdomain: 'lorewb', fbc, fbp })
     }
   );
   if (!resp.ok) throw new Error(`LineManager error: ${resp.status}`);
@@ -221,7 +221,7 @@ window.addEventListener('load', async () => {
     uuid,
     name,
     timestamp: new Date().toISOString(),
-    subdomain: 'memewb'
+    subdomain: 'lorewb'
   };
   fetch(SECONDARY_API, {
     method: 'POST',
